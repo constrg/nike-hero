@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Nike Hero Page</title>
+</head>
+<body>
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav-container">
+                        <a href="./index.html" class="logo-link"><img class="logo-img" src="./src/assets/images/nike-logo.png" alt="nike-logo"></a>
+                        <ul class="nav-center">
+                            <button class="close-nav-center-btn" onclick="closeNavCenter()">CLOSE</button>
+                            <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">MEN</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">WOMEN</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">KIDS</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">SALE</a></li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="nav-item" onclick="showSearch()"><a href="#" class="nav-link"><img class="nav-icon" src="./src/assets/icons/search-icon.svg" alt="search-icon"></a></li>
+                            <li class="nav-item account-action" onclick="showAccountAction()">
+                                <img class="nav-icon" src="./src/assets/icons/account-icon.svg" alt="hamburger-menu-icon">
+                                <div class="account">
+                                    <div class="account-action">
+                                        <a class="account-item" href="#">SIGNIN</a>
+                                        <a class="account-item" href="#">SIGNUP</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="hamburger-menu-btn" onclick="showNavCenter()">
+                            <img src="./src/assets/icons/hamburger-menu-icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">JUST DO IT</h1>
+                            <a class="discover-more-link" href="#" onclick="showAlert()">DISCOVER MORE <img class="arrow-right-icon " src="./src/assets/icons/arrow-right-icon.svg" alt="arrow-right"></a>
+                            <div class="nike-list">
+                                <button class="nike-item" onclick="nikeItem1()">
+                                    <img class="nike-img" src="./src/assets/images/nike-1.png" alt="nike-1" draggable="false">
+                                </button>
+                                <button class="nike-item" onclick="nikeItem2()">
+                                    <img class="nike-img" src="./src/assets/images/nike-2.png" alt="nike-2" draggable="false">
+                                </button>
+                                <button class="nike-item" onclick="nikeItem3()">
+                                    <img class="nike-img" src="./src/assets/images/nike-3.png" alt="nike-3" draggable="false">
+                                </button>
+                                <button class="nike-item" onclick="nikeItem4()">
+                                    <img class="nike-img" src="./src/assets/images/nike-4.png" alt="nike-4" draggable="false">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-img-container">
+                            <h1 class="hero-img-name">NIKE-1</h1>
+                            <img class="hero-img" src="./src/assets/images/nike-1.png" alt="nike-1" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <div class="search">
+        <div class="container">
+            <button class="close-search-btn" onclick="closeSearch()">CLOSE</button>
+            <div class="search-field">
+                <input class="search-input" type="text" placeholder="SEARCH...">
+                <button class="search-btn" onclick="handleSearch()">SEARCH</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./src/main.js"></script>
+</body>
+</html>
